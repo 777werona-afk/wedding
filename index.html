@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Марина & Александр — 26.09.2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+    :root{--brown:#6b5147;--brown-deep:#574139;--sage:#a8aa87;--sage-light:#b7b89c;--cream:#fbf8f4;--paper:#f4eee8;--ink:#67564c;--gold:#a97c5c}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--brown-deep);color:var(--ink);font-family:Montserrat,Arial,sans-serif}
+    body:before{content:"♥     ♥          ♥     ♥          ♥";position:fixed;inset:0;pointer-events:none;z-index:50;color:#f5ded0;opacity:.28;font:24px/112px "Cormorant Garamond",serif;letter-spacing:12px;word-spacing:18px;padding:0 8px;overflow:hidden}
+    .site{width:min(100%,560px);margin:auto;background:var(--brown);box-shadow:0 0 80px #30231f88;overflow:hidden}
+    .progress{position:fixed;z-index:100;left:0;right:0;top:0;height:3px;background:#fff2}.progress i{display:block;height:100%;width:0;background:#f9e6d8}
+    .music{position:fixed;z-index:90;right:max(12px,calc((100vw - 560px)/2 + 12px));top:12px;border:1px solid #fff7;background:#73594ddd;color:#fff;border-radius:99px;padding:8px 12px;font:500 10px Montserrat;letter-spacing:.08em}
+    section{position:relative;min-height:100svh;padding:72px 30px 68px;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
+    .sage{background:linear-gradient(145deg,var(--sage-light),var(--sage));color:#fffaf4}.cream{background:var(--cream)}
+    section:after{content:"";position:absolute;bottom:-2px;left:-4%;width:108%;height:26px;background:inherit;clip-path:polygon(0 48%,5% 70%,11% 43%,17% 68%,24% 48%,31% 72%,39% 43%,47% 70%,55% 49%,63% 73%,72% 45%,80% 67%,89% 47%,100% 70%,100% 100%,0 100%)}
+    h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500}h1{font-size:74px;line-height:.72;letter-spacing:-.05em;text-align:center;margin:8px 0}h1 span{font:52px Caveat,cursive}h2{font-size:48px;line-height:.9;text-align:center;margin:0 0 20px}h3{font-size:25px;line-height:1;margin:0 0 7px}.script{font:32px/1.05 Caveat,cursive}
+    .eyebrow{text-transform:uppercase;font-size:9px;letter-spacing:.24em;text-align:center;opacity:.72;}.line{height:1px;width:45px;background:currentColor;opacity:.45;margin:18px auto}
+    .hero{text-align:center}.hero:before{content:"";position:absolute;inset:18px;border:1px solid #fff8;border-radius:40px}.hero .script{margin:35px 0 19px;font-size:37px}.date{font:25px "Cormorant Garamond",serif;letter-spacing:.14em}.scroll{position:absolute;bottom:24px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;opacity:.65}.scroll b{display:block;font-size:23px;margin-top:4px;animation:bounce 1.5s infinite}@keyframes bounce{50%{transform:translateY(7px)}}
+    .copy{max-width:390px;text-align:center;font-size:12px;line-height:1.85;opacity:.75}
+    .envelope{width:220px;height:143px;background:#fff;margin:27px 0 29px;position:relative;box-shadow:0 16px 34px #49352b2c;cursor:pointer;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.2,1),filter .3s}
+    .envelope:hover{filter:brightness(1.02)}.envelope.open{transform:translateY(-8px) rotateX(12deg) scale(1.03)}
+    .envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(35deg,transparent 49%,#e9e5e0 50% 51%,transparent 52%),linear-gradient(-35deg,transparent 49%,#e9e5e0 50% 51%,transparent 52%)}
+    .flap{position:absolute;z-index:2;left:0;top:0;border-left:110px solid transparent;border-right:110px solid transparent;border-top:72px solid #e7e3de;transform-origin:top;transition:transform .6s}.open .flap{transform:rotateX(160deg)}
+    .seal{position:absolute;z-index:5;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#ad7c5b;color:#fff0e6;box-shadow:0 3px 7px #0003;font-size:21px;transition:.4s}.open .seal{transform:translate(-50%,-50%) scale(.8);opacity:.3}
+    .hint{font-size:10px;opacity:.55;margin-top:-12px}
+    .photo-section{padding-top:60px}.photos{width:100%;display:grid;gap:25px;margin-bottom:40px}.polaroid{background:#fffaf5;padding:9px 9px 21px;box-shadow:0 16px 32px #4a362b25}.polaroid img{width:100%;aspect-ratio:1/1.05;object-fit:cover;display:block}.polaroid figcaption{font:21px Caveat,cursive;text-align:center;color:#7d6558;margin-top:8px}.one{transform:rotate(-2.1deg)}.two{transform:rotate(2.2deg)}
+    .story{padding-top:55px}.collage{position:relative;width:min(100%,390px);height:390px;margin:14px 0 25px}.paper{position:absolute;inset:12px;background:#f4eee8;clip-path:polygon(1% 3%,8% 0,16% 2%,25% 0,34% 2%,45% 0,56% 3%,67% 0,78% 2%,90% 0,99% 4%,97% 18%,100% 30%,97% 44%,100% 57%,97% 71%,100% 84%,96% 98%,82% 96%,68% 100%,53% 97%,39% 100%,26% 97%,12% 100%,1% 95%,3% 82%,0 68%,3% 55%,0 40%,3% 27%,0 15%);box-shadow:0 20px 40px #45352c22}
+    .collage img{position:absolute;object-fit:cover;border:7px solid #fffaf5;box-shadow:0 14px 25px #44322938}.collage .alex{width:58%;height:64%;left:4%;top:9%;transform:rotate(-5deg)}.collage .marina{width:58%;height:65%;right:3%;bottom:7%;transform:rotate(5deg)}
+    .tape{position:absolute;z-index:4;width:78px;height:26px;background:#d9d6b7cc;transform:rotate(-5deg);top:3%;left:39%}.tape2{top:70%;left:3%;transform:rotate(11deg)}
+    .heart{color:var(--gold);font-size:25px;margin:18px 0}
+    .calendar{width:100%;max-width:380px;padding:20px 12px;border:1px solid #fff7;background:#fff2}.month{text-align:center;font:22px "Cormorant Garamond",serif;letter-spacing:.1em;margin-bottom:15px}.week,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center}.week{font-size:8px;opacity:.55;margin-bottom:8px}.days span{height:31px;display:grid;place-items:center;font:17px "Cormorant Garamond",serif;border-radius:50%}.days .muted{opacity:.2}.days .chosen{background:#8d735f;color:#fff}
+    .timeline{width:100%;max-width:430px;margin-top:15px}.event{display:grid;grid-template-columns:72px 1px 1fr;gap:15px;padding-bottom:39px}.time{font:22px "Cormorant Garamond",serif;text-align:right}.dot{position:relative;background:#cbb7a8}.dot:before{content:"";position:absolute;top:4px;left:50%;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:var(--gold);border:3px solid var(--cream)}.event p{font-size:11px;line-height:1.65;opacity:.65;margin:0}
+    .address{text-align:center;font-size:12px;line-height:1.7;opacity:.7}.map{width:100%;max-width:400px;height:230px;margin:25px 0 15px;position:relative;background:repeating-linear-gradient(12deg,#b8b89c 0 23px,#aaa98f 24px 26px);overflow:hidden}.map:before{content:"";position:absolute;width:150%;height:5px;top:47%;left:-25%;background:#eee9dc99;transform:rotate(15deg)}.map:after{content:"";position:absolute;width:150%;height:4px;top:67%;left:-25%;background:#eee9dc88;transform:rotate(-27deg)}.pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-45deg);width:48px;height:48px;border-radius:50% 50% 50% 0;background:#a77a5a;color:#fff;display:grid;place-items:center;z-index:3}.links{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.links a{color:inherit;font-size:10px;text-decoration:underline;text-underline-offset:4px}
+    .count{display:flex;justify-content:center;align-items:flex-end;gap:7px;margin:28px 0}.count div{text-align:center;min-width:54px}.count strong{display:block;font:500 36px "Cormorant Garamond",serif}.count span{font:18px Caveat,cursive;opacity:.75}.count em{font:normal 24px "Cormorant Garamond",serif;margin-bottom:10px;opacity:.5}
+    .rsvp-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:#fff;background:#9b9d78;border-radius:30px;padding:15px 22px;margin-top:24px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 9px 20px #5c503d22;transition:.25s}.rsvp-link:active{transform:scale(.94)}.deadline{font-size:10px;opacity:.58;margin-top:14px}
+    .final{min-height:75vh;text-align:center}.final .script{font-size:42px}.final h2{font-size:45px;margin:10px 0}
+    .reveal{opacity:0;transform:translateY(35px) scale(.985);transition:opacity .9s,transform .9s}.reveal.show{opacity:1;transform:none}
+    .float-heart{position:fixed;z-index:60;pointer-events:none;font-size:20px;animation:float 1.1s ease-out forwards}@keyframes float{0%{opacity:0;transform:translate(0,0) scale(.6)}15%{opacity:1}100%{opacity:0;transform:translate(var(--x),-90px) scale(1.4) rotate(20deg)}}
+    @media(max-width:390px){h1{font-size:61px}h2{font-size:43px}section{padding-left:24px;padding-right:24px}.collage{height:350px}}
+
+    /* Декор */
+    .decor {
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      z-index:4;
+    }
+    .decor .flower, .decor .ring, .decor .spark, .decor .corner {
+      position:absolute;
+      color:rgba(255,248,240,.82);
+      text-shadow:0 2px 8px rgba(55,35,28,.18);
+    }
+    .decor .flower { font-family:"Cormorant Garamond",serif; font-size:30px; animation:sway 4s ease-in-out infinite; }
+    .decor .ring { width:27px;height:27px;border:2px solid currentColor;border-radius:50%; }
+    .decor .ring:after { content:"";position:absolute;width:17px;height:17px;border:1px solid currentColor;border-radius:50%;left:3px;top:3px;opacity:.55; }
+    .decor .spark { font-size:17px; animation:twinkle 2.4s ease-in-out infinite; }
+    .decor .corner { width:55px;height:55px; border-top:1px solid currentColor;border-left:1px solid currentColor; }
+    .decor .c2 { transform:rotate(90deg); right:0; left:auto; }
+    .decor .c3 { transform:rotate(180deg); right:0; bottom:0; top:auto; }
+    .decor .c4 { transform:rotate(270deg); bottom:0; top:auto; }
+    .decor .f1{left:5%;top:13%}.decor .f2{right:7%;top:24%}.decor .f3{left:8%;bottom:19%}.decor .f4{right:8%;bottom:12%}
+    .decor .r1{left:8%;top:38%}.decor .r2{right:9%;top:55%}.decor .r3{left:14%;bottom:30%}
+    .decor .s1{left:17%;top:22%}.decor .s2{right:19%;top:14%}.decor .s3{left:22%;bottom:13%}.decor .s4{right:15%;bottom:25%}
+    @keyframes sway { 0%,100%{transform:rotate(-5deg) scale(1)}50%{transform:rotate(6deg) scale(1.08)} }
+    @keyframes twinkle { 0%,100%{opacity:.3;transform:scale(.8) rotate(0)}50%{opacity:1;transform:scale(1.25) rotate(12deg)} }
+    .tap-decor{cursor:pointer;pointer-events:auto;transition:transform .2s}
+    .tap-decor:active{transform:scale(.82)}
+  </style>
+</head>
+<body>
+<div class="progress"><i id="bar"></i></div>
+<div class="site">
+
+<!-- HERO: надпись вверху, имена и дата смещены на 45% ниже, черта убрана -->
+<section class="sage hero reveal" style="position:relative; overflow:hidden; min-height:100svh; padding:0;">
+  <!-- Фон -->
+  <div style="
+    position:absolute;
+    inset:0;
+    background: 
+      linear-gradient(180deg, rgba(107, 81, 71, 0.3) 0%, rgba(87, 65, 57, 0.6) 100%),
+      url('assets/main2.png') center/cover no-repeat;
+    z-index:1;
+  "></div>
+  
+  <!-- Декоративная рамка -->
+  <div style="
+    position:absolute;
+    inset:18px;
+    border:1px solid rgba(255,255,255,0.5);
+    border-radius:40px;
+    z-index:2;
+  "></div>
+  
+  <div class="decor" aria-hidden="true">
+    <span class="corner c1"></span><span class="corner c2"></span>
+    <span class="corner c3"></span><span class="corner c4"></span>
+    <span class="flower f1 tap-decor">❀</span><span class="flower f2 tap-decor">✿</span>
+    <span class="flower f3 tap-decor">❀</span><span class="flower f4 tap-decor">✿</span>
+    <span class="ring r1 tap-decor"></span><span class="ring r2 tap-decor"></span>
+    <span class="ring r3 tap-decor"></span>
+    <span class="spark s1">✦</span><span class="spark s2">✧</span>
+    <span class="spark s3">✦</span><span class="spark s4">✧</span>
+  </div>
+
+  <!-- Контент: "приглашение" вверху, основной блок на 45% ниже -->
+  <div style="
+    position:relative;
+    z-index:3;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    min-height:100svh;
+    padding: 32px 30px 68px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  ">
+    <!-- "приглашение на свадьбу" в самом верху -->
+    <div class="eyebrow" style="color:rgba(255,255,255,0.8); margin-top: 6px; margin-bottom: 0;">приглашение на свадьбу</div>
+    
+    <!-- Основной блок с именами и датой смещён на 45% вниз -->
+    <div style="display:flex; flex-direction:column; align-items:center; margin-top: 45vh; width:100%;">
+      <!-- Черта убрана -->
+      <h1 style="color:#fff; font-size:74px; line-height:0.72; letter-spacing:-.05em; margin:8px 0;">
+        Марина<br><span style="color:#fff; font:52px Caveat,cursive;">&amp;</span><br>Александр
+      </h1>
+      <div class="script" style="color:rgba(255,255,255,0.9); margin-top: 18px; font-size:37px;">мы женимся!</div>
+      <div class="date" style="color:rgba(255,255,255,0.8); margin-top: 18px; font-size:25px;">26 · 09 · 2026</div>
+    </div>
+
+    <div class="scroll" style="color:rgba(255,255,255,0.6); position:absolute; bottom:24px;">листайте вниз<b style="color:rgba(255,255,255,0.8);">↓</b></div>
+  </div>
+</section>
+<!-- КОНЕЦ: Hero -->
+
+<section class="cream reveal" id="letter">
+<div class="eyebrow">роднульки!</div><h2>Вам письмо!</h2>
+<p class="copy">Есть моменты, которыми хочется делиться с самыми близкими. Поэтому мы приглашаем вас разделить с нами один из самых важных и счастливых дней нашей жизни.</p>
+<div class="envelope" id="envelope"><div class="flap"></div><div class="seal">♥</div></div>
+<div class="hint">нажмите на конверт</div><div class="script">с любовью,<br>Марина &amp; Александр</div>
+</section>
+
+<section class="cream story reveal">
+<div class="eyebrow">наша история</div><h2>Когда-то давно…</h2>
+<div class="collage">
+<div class="paper"></div><div class="tape"></div><div class="tape tape2"></div>
+<img class="alex" src="assets/alexander-child-1.jpg" alt="Александр в детстве">
+<img class="marina" src="assets/marina-child-1.jpg" alt="Марина в детстве">
+</div>
+<p class="copy">Мы ещё не знали, что однажды встретимся и будем создавать свою семью.</p>
+<div class="heart">♡</div>
+</section>
+
+<section class="sage reveal">
+<div class="eyebrow">сохраните дату</div><h2>26 сентября<br>2026</h2><p class="copy">Будем очень счастливы видеть вас рядом в этот особенный день.</p>
+<div class="calendar"><div class="month">СЕНТЯБРЬ 2026</div><div class="week"><span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span></div>
+<div class="days"><span class="muted">31</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span class="chosen">26</span><span>27</span><span>28</span><span>29</span><span>30</span><span class="muted">1</span><span class="muted">2</span><span class="muted">3</span><span class="muted">4</span></div></div>
+</section>
+
+<section class="cream reveal">
+<div class="eyebrow">день свадьбы</div><h2>Программа</h2><div class="timeline">
+<div class="event"><div class="time">09:20</div><div class="dot"></div><div><h3>Торжественная регистрация</h3><p>ЗАГС Арзамаса</p></div></div>
+<div class="event"><div class="time">16:00</div><div class="dot"></div><div><h3>Сбор гостей</h3><p>Семейная фотосессия + фуршет<br>ресторан «Сальников»</p></div></div>
+<div class="event"><div class="time">16:40–22:00</div><div class="dot"></div><div><h3>Праздничный ужин</h3><p>ресторан «Сальников»</p></div></div></div>
+</section>
+
+<section class="sage reveal">
+<div class="eyebrow">место проведения</div><h2>Ресторан<br>«Сальников»</h2><div class="address">Арзамас, ул. Карла Маркса, 1</div>
+<div class="map"><div class="pin">♥</div></div><div class="links"><a href="https://yandex.ru/maps/?text=Арзамас%20Карла%20Маркса%201" target="_blank">Яндекс Карты ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Арзамас%20Карла%20Маркса%201" target="_blank">Google Maps ↗</a></div>
+</section>
+
+<section class="sage reveal">
+<div class="eyebrow">до нашей встречи</div><h2>Осталось совсем немного</h2>
+<div class="count"><div><strong id="d">—</strong><span>дней</span></div><em>·</em><div><strong id="h">—</strong><span>часов</span></div><em>·</em><div><strong id="m">—</strong><span>минут</span></div><em>·</em><div><strong id="s">—</strong><span>секунд</span></div></div><div class="script">с нетерпением ждём Вас!</div>
+</section>
+
+<section class="cream reveal">
+<div class="eyebrow">анкета гостя</div><h2>Будете с нами?</h2>
+<p class="copy">Пожалуйста, подтвердите присутствие и заполните анкету до <b>20.09.2026</b>. Нажмите на кнопку — откроется наша анкета в Google Формах.</p>
+<a class="rsvp-link" id="rsvp" href="#" target="_blank" rel="noopener">заполнить анкету ♥</a>
+<div class="deadline">приём ответов до 20 сентября 2026 года</div>
+</section>
+
+<section class="cream final reveal"><div class="line"></div><div class="script">до встречи</div><h2>Марина &amp; Александр</h2><div class="date">26 · 09 · 2026</div><div class="heart">♥</div><div class="eyebrow">мы будем ждать вас</div></section>
+</div>
+
+<script>
+const FORM_URL='https://forms.gle/7CTCFkPNzhmhuWUHA';
+document.getElementById('rsvp').href=FORM_URL.startsWith('http')?FORM_URL:'#';
+document.getElementById('rsvp').addEventListener('click',e=>{if(!FORM_URL.startsWith('http')){e.preventDefault();alert('Здесь будет ссылка на Яндекс Форму. Пришлите мне ссылку — я вставлю её в сайт.')}});
+
+document.querySelectorAll('.tap-decor').forEach(el=>el.addEventListener('click',e=>{
+  const r=document.createElement('span');
+  r.className='float-heart';
+  r.textContent=Math.random()>.5?'♡':'✦';
+  r.style.left=e.clientX+'px'; r.style.top=e.clientY+'px';
+  r.style.setProperty('--x',(Math.random()-.5)*100+'px');
+  document.body.appendChild(r); setTimeout(()=>r.remove(),1100);
+}));
+const target=new Date('2026-09-26T16:00:00+03:00');
+function tick(){let x=Math.max(0,target-new Date());d.textContent=Math.floor(x/86400000);h.textContent=String(Math.floor(x%86400000/3600000)).padStart(2,'0');m.textContent=String(Math.floor(x%3600000/60000)).padStart(2,'0');s.textContent=String(Math.floor(x%60000/1000)).padStart(2,'0')}tick();setInterval(tick,1000);
+const obs=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+addEventListener('scroll',()=>{let d=document.documentElement;bar.style.width=(scrollY/(d.scrollHeight-innerHeight)*100)+'%'});
+document.getElementById('envelope').addEventListener('click',function(){this.classList.toggle('open');for(let i=0;i<9;i++){let x=document.createElement('span');x.className='float-heart';x.textContent=i%2?'♡':'♥';x.style.left=(window.innerWidth/2+(Math.random()-.5)*110)+'px';x.style.top=(window.innerHeight*.65)+'px';x.style.setProperty('--x',(Math.random()-.5)*120+'px');document.body.appendChild(x);setTimeout(()=>x.remove(),1100)}});
+document.querySelectorAll('a,.rsvp-link').forEach(a=>a.addEventListener('click',function(){this.animate([{transform:'scale(1)'},{transform:'scale(.94)'},{transform:'scale(1)'}],{duration:240})}));
+</script>
+</body>
+</html>
